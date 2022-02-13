@@ -519,10 +519,23 @@ function hmrAcceptRun(bundle, id) {
 }
 
 },{}],"jeorp":[function(require,module,exports) {
+var _elements = require("./logic/elements");
+globalThis.onload = ()=>{
+    _elements.artForm.addEventListener('submit', (e)=>{
+        e.preventDefault();
+        const values = new FormData(e.target);
+        // @ts-expect-error typescript warns about .values
+        // because it isn't supported by IE
+        for (const entry of values.values())console.log(entry);
+    });
+};
+
+},{"./logic/elements":"lu3ts"}],"lu3ts":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-globalThis.onload = ()=>{
-};
+parcelHelpers.export(exports, "artForm", ()=>artForm
+);
+const artForm = document.getElementById('art-form');
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"8hzlA"}],"8hzlA":[function(require,module,exports) {
 exports.interopDefault = function(a) {

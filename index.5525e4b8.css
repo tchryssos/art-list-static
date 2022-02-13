@@ -37,6 +37,10 @@ input {
   box-sizing: border-box;
 }
 
+label {
+  font-size: 1rem;
+}
+
 #art-form {
   box-sizing: border-box;
   width: 100%;
@@ -49,9 +53,19 @@ input {
   font-size: 1.5rem;
 }
 
+.field-wrapper {
+  width: 100%;
+}
+
 .form-input {
   width: 100%;
-  padding: 0.5rem;
+  padding: 1rem;
+}
+
+#add-art-submit {
+  margin-right: auto;
+  width: 8rem;
+  height: 2.5rem;
 }
 
 /*# sourceMappingURL=index.5525e4b8.css.map */
