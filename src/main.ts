@@ -1,5 +1,3 @@
-import { content } from '~/src/logic/elements';
+globalThis.onload = () => {};
 
-if (content) {
-  content.textContent = 'TEMPLATE WORKS!';
-}
+export {};
