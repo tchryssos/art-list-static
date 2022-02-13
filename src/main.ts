@@ -1,6 +1,6 @@
 import { artForm } from './logic/elements';
 
-globalThis.onload = () => {
+globalThis.onload = async () => {
   artForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const values = new FormData(e.target as HTMLFormElement);

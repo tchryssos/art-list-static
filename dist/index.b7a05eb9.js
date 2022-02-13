@@ -520,7 +520,7 @@ function hmrAcceptRun(bundle, id) {
 
 },{}],"jeorp":[function(require,module,exports) {
 var _elements = require("./logic/elements");
-globalThis.onload = ()=>{
+globalThis.onload = async ()=>{
     _elements.artForm.addEventListener('submit', (e)=>{
         e.preventDefault();
         const values = new FormData(e.target);

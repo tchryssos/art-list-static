@@ -15,23 +15,44 @@
   <body>
     <main>
       <form id="art-form">
+        <h1 id="form-title">Art Form</h1>
         <div class="field-wrapper">
           <label for="artist">Artist</label>
-          <input class="form-input" type="text" name="artist" required />
+          <input
+            class="form-input form-text"
+            type="text"
+            name="artist"
+            required
+          />
         </div>
         <div class="field-wrapper">
           <label for="name">Artwork Name</label>
-          <input class="form-input" type="text" name="name" required />
+          <input
+            class="form-input form-text"
+            type="text"
+            name="name"
+            required
+          />
         </div>
         <div class="field-wrapper">
           <label for="location">Location Seen</label>
-          <input class="form-input" type="text" name="location" required />
+          <input
+            class="form-input form-text"
+            type="text"
+            name="location"
+            required
+          />
         </div>
         <div class="field-wrapper">
           <label for="date">Date Seen</label>
-          <input type="date" name="date" required class="form-input" />
+          <input
+            type="date"
+            name="date"
+            required
+            class="form-input form-text"
+          />
         </div>
-        <input id="add-art-submit" type="submit" />
+        <input id="add-art-submit" class="form-input" type="submit" />
       </form>
     </main>
     <script type="module" src="./main.ts"></script>
