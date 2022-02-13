@@ -1,0 +1,57 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+}
+
+div,
+a {
+  box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+input {
+  box-sizing: border-box;
+}
+
+#art-form {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 700px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+/*# sourceMappingURL=index.5525e4b8.css.map */
