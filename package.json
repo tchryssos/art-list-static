@@ -5,7 +5,7 @@
   "source": "src/index.html",
   "scripts": {
     "dev": "parcel",
-    "build": "rm -rf dist && parcel build --public-url ./ && touch dist/.nojekyll",
+    "build": "rm -rf dist && rm -rf .parcel-cache && parcel build --public-url ./ && touch dist/.nojekyll",
     "prod": "yarn build && npx http-server dist -p 1235 --proxy 'http://localhost:1235?'",
     "deploy": "yarn build && git push origin :gh-pages && git subtree push --prefix dist origin gh-pages && git checkout main",
     "deploy:only_first": "yarn && git checkout -b gh-pages && git push --set-upstream origin gh-pages && yarn deploy && git checkout main"
