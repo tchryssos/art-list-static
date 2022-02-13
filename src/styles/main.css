@@ -4,7 +4,8 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  font-family: monospace;
+  font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro',
+    'ＭＳ Ｐゴシック', Osaka, monospace;
 }
 
 body {
@@ -44,7 +45,7 @@ input {
 }
 
 label {
-  font-size: 1rem;
+  font-size: 0.825rem;
 }
 
 #form-title {
@@ -68,8 +69,9 @@ label {
 
 .form-input {
   padding: 1rem;
-  font-size: 1.25rem;
-  font-family: monospace;
+  font-size: 1rem;
+  font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro',
+    'ＭＳ Ｐゴシック', Osaka, monospace;
 }
 
 .form-text {
