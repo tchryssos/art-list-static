@@ -12,11 +12,23 @@
   <body>
     <main>
       <form id="art-form">
-        <input class="form-input" type="text">
-        <input class="form-input" type="text">
-        <input class="form-input" type="text">
-        <input class="form-input" type="text">
-        <input id="submit" type="submit">
+        <div class="field-wrapper">
+          <label for="artist">Artist</label>
+          <input class="form-input" type="text" name="artist" required="">
+        </div>
+        <div class="field-wrapper">
+          <label for="name">Artwork Name</label>
+          <input class="form-input" type="text" name="name" required="">
+        </div>
+        <div class="field-wrapper">
+          <label for="location">Location Seen</label>
+          <input class="form-input" type="text" name="location" required="">
+        </div>
+        <div class="field-wrapper">
+          <label for="date">Date Seen</label>
+          <input type="date" name="date" required="" class="form-input">
+        </div>
+        <input id="add-art-submit" type="submit">
       </form>
     </main>
     <script src="/index.b7a05eb9.js" defer=""></script>

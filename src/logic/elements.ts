@@ -1,1 +1,3 @@
-export const content = document.getElementById('content')
+export const artForm: HTMLFormElement = document.getElementById(
+  'art-form'
+)! as HTMLFormElement;
